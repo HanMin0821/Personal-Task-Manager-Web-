@@ -1,16 +1,41 @@
-# React + Vite
+# Personal Task Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple task management application built with React.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Task list
+●Display a list of tasks from hardcoded mock data.
+●Each task: title, description, status (pending/completed).
+2. Add new tasks
+●Provide a form to add a new task.
+●New task updates state and appears in the list.
+3. Edit tasks
+●Edit title and description of an existing task.
+4. Delete tasks
+●Remove a task from the list.
+## Technology Stack
+- React
+- React Router
+- CSS modules 
 
-## React Compiler
+## Setup and Running
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1.  **Install dependencies**:
+    ```bash
+    npm install
+    ```
 
-## Expanding the ESLint configuration
+2.  **Run the development server**:
+    ```bash
+    npm run dev
+    ```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+3.  **Open in browser**:
+    Navigate to http://localhost:5173
+
+## Project Structure
+
+- `src/App.jsx`: Main application component, handles routing and state.
+- `src/tasks/Tasks.jsx`: Displays the list of tasks and the "Add Task" form.
+- `src/tasks/TaskDetails.jsx`: Displays task details and the "Edit Task" form.
